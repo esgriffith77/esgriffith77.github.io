@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" href="styles.css" />
+
+<script>
+   function validateForm() {
+     let x = document.forms["myForm"]["fname"].value;
+     if (x == "") {
+       alert("First Name must be filled out");
+       return false;
+     }     
+     let ln = document.forms["myForm"]["lname"].value;
+     if (ln == "") {
+       alert("Last Name must be filled out");
+       return false;
+     }
+     let em = document.forms["myForm"]["email"].value;
+     if (em == "") {
+       alert("Email must be filled out");
+       return false;
+     }
+     let pw = document.forms["myForm"]["pwd"].value;
+     if (pw == "") {
+       alert("Password must be filled out");
+       return false;
+     }
+     let pw2 = document.forms["myForm"]["pwd2"].value;
+     if (pw2 == "") {
+       alert("Repeat Password must be filled out");
+       return false;
+     }
+     if (pw2 != pw) {
+       alert("Passwords must match");
+       return false;
+     }
+
+
+   }
+</script>
+
+</head>
+<body>
+
+<h1>Register for Account</h1>
+<p>This is where new users can register for an account.</p>
+
+<h2>Enter Information</h2>
+
+<form name="myForm" action="registertarget.html" onsubmit="return validateForm()" method="post">
+
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <br>
+  <label for="email">Email (this will be your User ID):</label><br>
+  <input type="text" id="email" name="email"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br>
+  <label for="pwd2">Repeat Password:</label><br>
+  <input type="password" id="pwd2" name="pwd2"><br>
+
+  <input type="submit" value="Submit">
+  
+</form> 
+
+</body>
+</html> 
