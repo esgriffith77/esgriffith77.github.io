@@ -11,7 +11,6 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 body {
   background-repeat: no-repeat;
   background-position: center top;
@@ -22,13 +21,13 @@ body {
 }
 
 a:link {
-  color: green;
+  color: blue;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: pink;
+  color: purple;
   background-color: transparent;
   text-decoration: none;
 }
@@ -40,7 +39,7 @@ a:hover {
 }
 
 a:active {
-  color: yellow;
+  color: green;
   background-color: transparent;
   text-decoration: underline;
 }
